@@ -15,7 +15,9 @@
     *************/
     
     /* Smartphone */
-    @media (max-width: 767px) {
+
+    @media (max-width: 768px){
+    
     $ancho: auto;
     $alto: 200px;
     $color-titulos: #009EA4;
@@ -159,15 +161,6 @@
 
     
 
-
-
-
-    @for $h from 2 through 6 {
-        h#{$h} { 
-            font-size: 19px-$h;
-            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-         }
-    }
       
 
     @each $portada in home, nos, prod, serv, sus, cert, cont {
@@ -396,7 +389,7 @@
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 200px 400px 400px 400px 300px 250px 268px 100px;
+        grid-template-rows: 40px 190px 400px 400px 400px 300px 250px 268px 100px;
     }    
     
     .gridAreaNos {
@@ -620,8 +613,9 @@
     .p{
         bottom: 2;
     }
+}
 
-    }
+    
 
    
     
