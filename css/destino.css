@@ -10,22 +10,23 @@
     padding: 0; }
   .portada {
     width: auto;
-    height: 200px;
+    height: 300px;
     display: flex; }
-  .home {
-    background-image: url("../media/imagenes/home.jpg"); }
   .nos {
-    background-image: url("../media/imagenes/nos.jpg"); }
-  .prod {
-    background-image: url("../media/imagenes/prod.jpg"); }
+    background-image: url("../media/Img/nos.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .serv {
-    background-image: url("../media/imagenes/serv.jpg"); }
-  .sus {
-    background-image: url("../media/imagenes/sus.jpg"); }
+    background-image: url("../media/Img/serv.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .cert {
-    background-image: url("../media/imagenes/cert.jpg"); }
-  .cont {
-    background-image: url("../media/imagenes/cont.jpg"); }
+    background-image: url("../media/Img/cert.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .bg-celeste {
     background-color: #009EA4; }
   .bg-gris {
@@ -52,7 +53,9 @@
     padding: 0 8px; }
   .divContacto {
     width: 50%;
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap; }
   .divP {
     width: 310px;
     padding: 5px;
@@ -134,6 +137,20 @@
     padding: 8px; }
   img {
     width: 60%; }
+  .contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: auto; }
+  .texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   #uno {
     grid-area: video; }
   #dos {
@@ -181,9 +198,9 @@
     grid-template-rows: 40px 400px 350px 400px 400px 500px 350px 380px 100px; }
   .gridAreaNos {
     display: grid;
-    grid-template-areas: "header" "placa" "historia" "foto"                 "footer";
+    grid-template-areas: "header" "placa" "historia" "detalles" "complejo"                 "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 25vh 35vh 30vh 10%; } }
+    grid-template-rows: 40px 200px 800px 800px 320px 100px; } }
 
 /* Desktop */
 @media (min-width: 1025px) {
@@ -192,7 +209,7 @@
     background-color: #fff; }
   #sustentabilidad .box--uno {
     width: auto;
-    height: 200px;
+    height: 300px;
     display: flex; }
   #sustentabilidad .box--uno__text {
     font-size: 50px;
@@ -201,7 +218,7 @@
     margin: auto; }
   #sustentabilidad .box--dos {
     width: auto;
-    height: 200px;
+    height: 300px;
     align-items: center;
     display: flex;
     flex-flow: row wrap; }
@@ -265,27 +282,32 @@
   #sustentabilidad .box--cuatro {
     background-color: #00818D;
     width: auto;
-    height: 200px;
+    height: 300px;
     display: flex; }
   #sustentabilidad .box--cuatro__text {
     font-size: 40px;
     color: #fff;
     text-align: center;
     margin: auto; }
-  .home {
-    background-image: url("../media/imagenes/home.jpg"); }
+  .portada {
+    width: auto;
+    height: 300px;
+    display: flex; }
   .nos {
-    background-image: url("../media/imagenes/nos.jpg"); }
-  .prod {
-    background-image: url("../media/imagenes/prod.jpg"); }
+    background-image: url("../media/Img/nos.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .serv {
-    background-image: url("../media/imagenes/serv.jpg"); }
-  .sus {
-    background-image: url("../media/imagenes/sus.jpg"); }
+    background-image: url("../media/Img/serv.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .cert {
-    background-image: url("../media/imagenes/cert.jpg"); }
-  .cont {
-    background-image: url("../media/imagenes/cont.jpg"); }
+    background-image: url("../media/Img/cert.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .bg-celeste {
     background-color: #009EA4; }
   .bg-gris {
@@ -548,20 +570,21 @@
     width: auto;
     height: 200px;
     display: flex; }
-  .home {
-    background-image: url("../media/imagenes/home.jpg"); }
   .nos {
-    background-image: url("../media/imagenes/nos.jpg"); }
-  .prod {
-    background-image: url("../media/imagenes/prod.jpg"); }
+    background-image: url("../media/Img/nos.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .serv {
-    background-image: url("../media/imagenes/serv.jpg"); }
-  .sus {
-    background-image: url("../media/imagenes/sus.jpg"); }
+    background-image: url("../media/Img/serv.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .cert {
-    background-image: url("../media/imagenes/cert.jpg"); }
-  .cont {
-    background-image: url("../media/imagenes/cont.jpg"); }
+    background-image: url("../media/Img/cert.jpg");
+    width: 100%;
+    background-position: center;
+    overflow: hidden; }
   .bg-celeste {
     background-color: #009EA4; }
   .bg-gris {
@@ -659,7 +682,22 @@
   .copy {
     padding: 8px; }
   img {
-    width: 60%; }
+    width: 60%;
+    margin: auto; }
+  .contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: auto; }
+  .texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   header {
     background-color: #fff;
     grid-area: header; }
@@ -710,9 +748,9 @@
     grid-template-rows: 40px 190px 400px 400px 400px 300px 250px 268px 100px; }
   .gridAreaNos {
     display: grid;
-    grid-template-areas: "header" "placa" "historia" "foto"                 "footer";
+    grid-template-areas: "header" "placa" "historia" "detalles" "complejo"                 "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 12vh 25vh 70vh 30vh 10%; }
+    grid-template-rows: 40px 200px 800px 800px 320px 100px; }
   aside img {
     width: 400px;
     align-content: center;
@@ -757,24 +795,6 @@
   .contenido {
     display: flex;
     flex-flow: row wrap; }
-  #uno {
-    grid-area: video; }
-  #dos {
-    grid-area: productos;
-    padding: 20px;
-    text-align: center;
-    align-content: center; }
-  #tres {
-    grid-area: servicios;
-    padding: 20px;
-    text-align: center; }
-  #cuatro {
-    grid-area: certi;
-    padding: 20px;
-    text-align: center; }
-  #cinco {
-    grid-area: logos;
-    text-align: center; }
   .video {
     overflow: hidden;
     align-content: center; }
@@ -782,8 +802,16 @@
     grid-area: historia;
     text-align: justify;
     padding: 20px; }
-  #foto {
-    grid-area: foto;
+  .hist {
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px; }
+  #detalles {
+    grid-area: detalles;
+    text-align: justify;
+    padding: 20px; }
+  #complejo {
+    grid-area: complejo;
     justify-content: center;
     align-content: center;
     margin-top: 10px; }
@@ -793,7 +821,7 @@
     width: 100%;
     align-content: center;
     justify-content: center;
-    background-image: linear-gradient(to left, #ff008c, white, #003cff); }
+    margin: auto; }
   /*Amimaciones*/
   @keyframes un_efecto {
     0% {

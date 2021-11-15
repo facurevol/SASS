@@ -3,7 +3,7 @@
 @media (min-width: 768px) and (max-width:1024px) {
 
     $ancho: auto;
-    $alto: 200px;
+    $alto: 300px;
     $color-titulos: #009EA4;
     $color-parrafo: #B1B4B3;
     $color-titulos-blanco: #fff;
@@ -26,9 +26,12 @@
 
       
 
-    @each $portada in home, nos, prod, serv, sus, cert, cont {
+    @each $portada in nos, serv, cert {
         .#{$portada}{
-            background-image: url("../media/imagenes/#{$portada}.jpg");
+            background-image: url("../media/Img/#{$portada}.jpg");
+            width: 100%;
+            background-position: center;
+            overflow: hidden;
         }        
     }
 
@@ -71,6 +74,9 @@
     .divContacto {
         width: 50%;
         padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+
     }
 
     .divP {
@@ -194,7 +200,25 @@
 
     img {
         width: 60%;
-    }  
+    } 
+    
+    .contenedor{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+    }
+    .texto-encima{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 
     #uno {   
@@ -280,12 +304,13 @@
             "header"
             "placa"
             "historia"
-            "foto"                
+            "detalles"
+            "complejo"                
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 25vh 35vh 30vh 10%;
-    }
+        grid-template-rows: 40px 200px 800px 800px 320px 100px;
+    }  
     
    
     
@@ -304,7 +329,7 @@
 @media (min-width:1025px){
 
     $ancho: auto;
-    $alto: 200px;
+    $alto: 300px;
     $color-titulos: #009EA4;
     $color-parrafo: #B1B4B3;
     $color-titulos-blanco: #fff;
@@ -434,14 +459,18 @@
     }
 
    
-
+    .portada {
+        width: $ancho;
+        height: $alto;
+        display: flex; 
+    }
     
-
-      
-
-    @each $portada in home, nos, prod, serv, sus, cert, cont {
+    @each $portada in nos, serv, cert {
         .#{$portada}{
-            background-image: url("../media/imagenes/#{$portada}.jpg");
+            background-image: url("../media/Img/#{$portada}.jpg");
+            width: 100%;
+            background-position: center;
+            overflow: hidden;
         }        
     }
 

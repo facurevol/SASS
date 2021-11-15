@@ -128,34 +128,7 @@ header {
     text-align: center;   
 }
 
-.gridAreaHome {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "video"
-        "manifiesto"
-        "productos"
-        "servicios"
-        "certi"
-        "logos"
-        "footer"
-        ;            
-    grid-template-columns: 100%;
-    grid-template-rows: 12vh 25vh 40vh 255vh 100vh 90vh 60vh 20vh;
-}    
 
-.gridAreaNos {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "placa"
-        "historia"
-        "foto"                
-        "footer"
-        ;            
-    grid-template-columns: 100%;
-    grid-template-rows: 12vh 25vh 70vh 30vh 10%;
-}
 
 footer {
     display: flex;  
@@ -360,14 +333,7 @@ ul li:hover ul {
     margin-top: 10px;
 }
 
-#placa {
-    grid-area: placa;
-    overflow: hidden;
-    width: 100%;    
-    align-content: center;
-    justify-content: center;
-    background-image: linear-gradient(to left, rgb(255, 0, 140), white, rgb(0, 60, 255));
-}
+
 
 .h3 {
     text-align: left;
@@ -441,34 +407,7 @@ p {
     font-size: 12px;        
 }
 
-.gridAreaHome {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "video"
-        "manifiesto"
-        "productos"
-        "servicios"
-        "certi"
-        "logos"
-        "footer"
-        ;            
-    grid-template-columns: 100%;
-    grid-template-rows: 10vh 25vh 20vh 75vh 30vh 30vh 20vh 10%;
-}
 
-.gridAreaNos {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "placa"
-        "historia"
-        "foto"                
-        "footer"
-        ;            
-    grid-template-columns: 100%;
-    grid-template-rows: 10vh 25vh 35vh 30vh 10%;
-}
 
 .divP {
     width: 210px;

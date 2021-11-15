@@ -163,11 +163,16 @@
 
       
 
-    @each $portada in home, nos, prod, serv, sus, cert, cont {
+    @each $portada in nos, serv, cert {
         .#{$portada}{
-            background-image: url("../media/imagenes/#{$portada}.jpg");
+            background-image: url("../media/Img/#{$portada}.jpg");
+            width: 100%;
+            background-position: center;
+            overflow: hidden;
         }        
     }
+
+    
 
     $bg_color: (
         celeste: #009EA4,
@@ -315,7 +320,30 @@
 
     img {
         width: 60%;
-    }           
+        margin: auto;
+    } 
+    
+    .contenedor{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+    }
+    .texto-encima{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+
     
     header {
         background-color: $color-background-web;
@@ -381,6 +409,8 @@
         padding: 20px;
         text-align: center;   
     }
+
+    //grids
     
     .gridAreaHome {
         display: grid;
@@ -405,11 +435,12 @@
             "header"
             "placa"
             "historia"
-            "foto"                
+            "detalles"
+            "complejo"                
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 12vh 25vh 70vh 30vh 10%;
+        grid-template-rows: 40px 200px 800px 800px 320px 100px;
     }  
 
     aside img {
@@ -476,34 +507,6 @@
         flex-flow: row wrap;
     }
     
-    #uno {   
-        grid-area: video;
-    }
-    
-    #dos {   
-        grid-area: productos;
-        padding: 20px;
-        text-align: center;
-        align-content: center;
-    }
-    
-    #tres {    
-        grid-area: servicios;
-        padding: 20px;
-        text-align: center;    
-    }
-    
-    #cuatro {   
-        grid-area: certi;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    #cinco {
-        grid-area: logos;
-        text-align: center;
-        
-    }
     
     .video {
         overflow: hidden;
@@ -515,9 +518,21 @@
         text-align: justify;
         padding: 20px;
     }
+
+    .hist {
+        justify-content: center;
+        align-content: center;
+        margin-top: 10px;
+    }
+
+    #detalles {
+        grid-area: detalles;
+        text-align: justify;
+        padding: 20px;
+    }
     
-    #foto {
-        grid-area: foto;
+    #complejo {
+        grid-area: complejo;
         justify-content: center;
         align-content: center;
         margin-top: 10px;
@@ -529,7 +544,8 @@
         width: 100%;    
         align-content: center;
         justify-content: center;
-        background-image: linear-gradient(to left, rgb(255, 0, 140), white, rgb(0, 60, 255));
+        margin: auto;
+      
     }
     
     
