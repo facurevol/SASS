@@ -16,7 +16,7 @@
     
     /* Smartphone */
 
-    @media (max-width: 768px){
+    @media (max-width: 767px){
     
     $ancho: auto;
     $alto: 200px;
@@ -235,6 +235,13 @@
     }
 
     .h2--celeste {
+        text-align: center;
+        color: $color-titulos;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .h2--nav {
         text-align: center;
         color: $color-titulos;
         font-size: 16px;
