@@ -55,6 +55,21 @@
         padding: 0;
     }
 
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;    
+    }
+
     .prod {
         width: 50%;
         padding: 0;
@@ -175,7 +190,7 @@
         font-style: normal;
         text-align: left;
         font-size: 16px;  
-        margin: 0 6px;      
+        margin: 0 6px 10px 6px;      
     }
     
     a {
@@ -267,6 +282,21 @@
     .video {
         overflow: hidden;
         align-content: center;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: auto;
+        height: auto;
+        background-color: $color-background-section;
+        
+    }
+
+    .logo {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 20%;
+        
     }
     
     .manifiesto {
@@ -295,7 +325,7 @@
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 40px 400px 350px 400px 400px 500px 350px 380px 100px;
+        grid-template-rows: 60px 400px 350px 400px 400px 500px 350px 830px 100px;
     }   
     
     .gridAreaNos {
@@ -647,14 +677,14 @@
     
     #dos {   
         grid-area: productos;
-        padding: 20px;
+        padding: 18px;
         align-content: center;
         align-items: center;
     }
     
     #tres {    
         grid-area: servicios;
-        padding: 20px;
+        padding: 18px;
         text-align: center;    
     }
     
@@ -674,27 +704,42 @@
 
     #cuatro {
         grid-area: circular;
-        padding: 20px;
+        padding: 18px;
         text-align: center;
         background-color: $color-background-web;   
     }
     
     #cinco {   
         grid-area: certi;
-        padding: 20px;
+        padding: 18px;
         text-align: center;
         background-color: #009EA4;
     }  
 
     #seis {
         grid-area: contacto;
-        padding: 20px;
+        padding: 18px;
         text-align: center;    
     }
         
     .video {
         overflow: hidden;
         align-content: center;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: auto;
+        height: auto;
+        background-color: $color-background-section;
+        
+    }
+
+    .logo {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 40%;
+        
     }
     
     .manifiesto {
@@ -705,7 +750,7 @@
     
     #manifiesto {
         grid-area: manifiesto;
-        padding: 20px;
+        padding: 18px;
         text-align: center;   
     }
  
@@ -723,7 +768,7 @@
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 40px 300px 500px 300px 400px 400px 200px 350px 100px;
+        grid-template-rows: 60px 300px 500px 300px 400px 400px 200px 700px 100px;
     }   
     
     .gridAreaNos {
@@ -732,12 +777,13 @@
             "header"
             "placa"
             "historia"
-            "foto"                
+            "detalles"
+            "complejo"                
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 25vh 35vh 30vh 10%;
-    }
+        grid-template-rows: 40px 200px 800px 800px 320px 100px;
+    }  
     
 
     

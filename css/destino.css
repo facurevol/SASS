@@ -42,6 +42,17 @@
   .caja {
     width: 100%;
     padding: 0; }
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0; }
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
   .prod {
     width: 50%;
     padding: 0; }
@@ -123,7 +134,7 @@
     font-style: normal;
     text-align: left;
     font-size: 16px;
-    margin: 0 6px; }
+    margin: 0 6px 10px 6px; }
   a {
     color: #009EA4;
     text-decoration: none; }
@@ -182,7 +193,18 @@
     text-align: center; }
   .video {
     overflow: hidden;
-    align-content: center; }
+    align-content: center;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: #00818D; }
+  .logo {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 20%; }
   .manifiesto {
     color: #fff;
     text-align: left;
@@ -195,7 +217,7 @@
     display: grid;
     grid-template-areas: "header" "video" "manifiesto" "productos" "servicios" "circular" "certi" "contacto" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 40px 400px 350px 400px 400px 500px 350px 380px 100px; }
+    grid-template-rows: 60px 400px 350px 400px 400px 500px 350px 830px 100px; }
   .gridAreaNos {
     display: grid;
     grid-template-areas: "header" "placa" "historia" "detalles" "complejo"                 "footer";
@@ -422,12 +444,12 @@
     grid-area: video; }
   #dos {
     grid-area: productos;
-    padding: 20px;
+    padding: 18px;
     align-content: center;
     align-items: center; }
   #tres {
     grid-area: servicios;
-    padding: 20px;
+    padding: 18px;
     text-align: center; }
   .certi {
     color: white;
@@ -441,39 +463,50 @@
     margin: auto 0; }
   #cuatro {
     grid-area: circular;
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     background-color: #fff; }
   #cinco {
     grid-area: certi;
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     background-color: #009EA4; }
   #seis {
     grid-area: contacto;
-    padding: 20px;
+    padding: 18px;
     text-align: center; }
   .video {
     overflow: hidden;
-    align-content: center; }
+    align-content: center;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: #00818D; }
+  .logo {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 40%; }
   .manifiesto {
     color: #fff;
     text-align: left;
     background-color: #00818D; }
   #manifiesto {
     grid-area: manifiesto;
-    padding: 20px;
+    padding: 18px;
     text-align: center; }
   .gridAreaHome {
     display: grid;
     grid-template-areas: "header" "video" "manifiesto" "productos" "servicios" "circular" "certi" "contacto" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 40px 300px 500px 300px 400px 400px 200px 350px 100px; }
+    grid-template-rows: 60px 300px 500px 300px 400px 400px 200px 700px 100px; }
   .gridAreaNos {
     display: grid;
-    grid-template-areas: "header" "placa" "historia" "foto"                 "footer";
+    grid-template-areas: "header" "placa" "historia" "detalles" "complejo"                 "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 25vh 35vh 30vh 10%; } }
+    grid-template-rows: 40px 200px 800px 800px 320px 100px; } }
 
 /************ 
     Mobile First 
@@ -600,6 +633,17 @@
   .caja {
     width: 100%;
     padding: 0; }
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0; }
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
   .prod {
     width: 50%;
     padding: 0; }
@@ -705,12 +749,12 @@
     grid-area: video; }
   #dos {
     grid-area: productos;
-    padding: 20px;
+    padding: 15px;
     align-content: center;
     align-items: center; }
   #tres {
     grid-area: servicios;
-    padding: 20px;
+    padding: 15px;
     text-align: center; }
   .certi {
     color: white;
@@ -718,34 +762,45 @@
     background-color: #009EA4; }
   #cuatro {
     grid-area: circular;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     background-color: #fff; }
   #cinco {
     grid-area: certi;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     background-color: #009EA4; }
   #seis {
     grid-area: contacto;
-    padding: 20px;
+    padding: 15px;
     text-align: center; }
   .video {
     overflow: hidden;
-    align-content: center; }
+    align-content: center;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: #00818D; }
+  .logo {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 20%; }
   .manifiesto {
     color: #fff;
     text-align: left;
     background-color: #00818D; }
   #manifiesto {
     grid-area: manifiesto;
-    padding: 20px;
+    padding: 15px;
     text-align: center; }
   .gridAreaHome {
     display: grid;
     grid-template-areas: "header" "video" "manifiesto" "productos" "servicios" "circular" "certi" "contacto" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 40px 190px 400px 400px 400px 300px 250px 268px 100px; }
+    grid-template-rows: 60px 200px 400px 400px 400px 300px 250px 430px 100px; }
   .gridAreaNos {
     display: grid;
     grid-template-areas: "header" "placa" "historia" "detalles" "complejo"                 "footer";

@@ -194,6 +194,21 @@
         padding: 0;
     }
 
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;    
+    }
+
     .prod {
         width: 50%;
         padding: 0;
@@ -356,14 +371,14 @@
     
     #dos {   
         grid-area: productos;
-        padding: 20px;
+        padding: 15px;
         align-content: center;
         align-items: center;
     }
     
     #tres {    
         grid-area: servicios;
-        padding: 20px;
+        padding: 15px;
         text-align: center;    
     }
     
@@ -375,27 +390,42 @@
 
     #cuatro {
         grid-area: circular;
-        padding: 20px;
+        padding: 15px;
         text-align: center;
         background-color: $color-background-web;   
     }
     
     #cinco {   
         grid-area: certi;
-        padding: 20px;
+        padding: 15px;
         text-align: center;
         background-color: #009EA4;
     }  
 
     #seis {
         grid-area: contacto;
-        padding: 20px;
+        padding: 15px;
         text-align: center;    
     }
         
     .video {
         overflow: hidden;
         align-content: center;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: auto;
+        height: auto;
+        background-color: $color-background-section;
+        
+    }
+
+    .logo {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 20%;
+        
     }
     
     .manifiesto {
@@ -406,7 +436,7 @@
     
     #manifiesto {
         grid-area: manifiesto;
-        padding: 20px;
+        padding: 15px;
         text-align: center;   
     }
 
@@ -426,7 +456,7 @@
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 40px 190px 400px 400px 400px 300px 250px 268px 100px;
+        grid-template-rows: 60px 200px 400px 400px 400px 300px 250px 430px 100px;
     }    
     
     .gridAreaNos {
