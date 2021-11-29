@@ -180,6 +180,7 @@
         margin: auto;
         display: flex;
         flex-flow: row wrap;
+        padding: 0px 20px;
     }
    
     .unica{
@@ -202,9 +203,9 @@
 
       
 
-    @each $portada in nos, serv, cert {
+    @each $portada in nos, serv {
         .#{$portada}{
-            background-image: url("../media/Img/#{$portada}.jpg");
+            background-image: url("../media/img/#{$portada}.jpg");
             width: 100%;
             background-position: center;
             overflow: hidden;
@@ -576,7 +577,7 @@
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 60px 200px 400px 400px 400px 300px 350px 430px 100px;
+        grid-template-rows: 60px 200px 400px 400px 400px 300px 350px 350px 100px;
     }    
     
     .gridAreaNos {

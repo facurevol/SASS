@@ -166,6 +166,7 @@
         margin: auto;
         display: flex;
         flex-flow: row wrap;
+        padding: 0px 20px;
     }
 
     .unica{
@@ -197,7 +198,7 @@
 
     @each $portada in nos, serv, cert {
         .#{$portada}{
-            background-image: url("../media/Img/#{$portada}.jpg");
+            background-image: url("../media/img/#{$portada}.jpg");
             width: 100%;
             background-position: center;
             overflow: hidden;
@@ -830,6 +831,7 @@
         margin: auto;
         display: flex;
         flex-flow: row wrap;
+        padding: 0px 20px;
         
     }
 
@@ -852,7 +854,7 @@
     
     @each $portada in nos, serv, cert {
         .#{$portada}{
-            background-image: url("../media/Img/#{$portada}.jpg");
+            background-image: url("../media/img/#{$portada}.jpg");
             width: 100%;
             background-position: center;
             overflow: hidden;
@@ -1266,7 +1268,7 @@
             "footer"
             ;            
         grid-template-columns: 100%;
-        grid-template-rows: 60px 300px 500px 300px 400px 400px 250px 760px 100px;
+        grid-template-rows: 60px 300px 500px 300px 400px 400px 250px 460px 100px;
     }   
     
     .gridAreaNos {

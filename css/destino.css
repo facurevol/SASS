@@ -110,7 +110,8 @@
     text-align: center;
     margin: auto;
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    padding: 0px 20px; }
   .unica {
     width: 50%;
     height: 450px;
@@ -126,17 +127,17 @@
     height: 300px;
     display: flex; }
   .nos {
-    background-image: url("../media/Img/nos.jpg");
+    background-image: url("../media/img/nos.jpg");
     width: 100%;
     background-position: center;
     overflow: hidden; }
   .serv {
-    background-image: url("../media/Img/serv.jpg");
+    background-image: url("../media/img/serv.jpg");
     width: 100%;
     background-position: center;
     overflow: hidden; }
   .cert {
-    background-image: url("../media/Img/cert.jpg");
+    background-image: url("../media/img/cert.jpg");
     width: 100%;
     background-position: center;
     overflow: hidden; }
@@ -531,7 +532,8 @@
     text-align: center;
     margin: auto;
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    padding: 0px 20px; }
   .unica {
     width: 50%;
     height: 450px;
@@ -544,17 +546,17 @@
     height: 300px;
     display: flex; }
   .nos {
-    background-image: url("../media/Img/nos.jpg");
+    background-image: url("../media/img/nos.jpg");
     width: 100%;
     background-position: center;
     overflow: hidden; }
   .serv {
-    background-image: url("../media/Img/serv.jpg");
+    background-image: url("../media/img/serv.jpg");
     width: 100%;
     background-position: center;
     overflow: hidden; }
   .cert {
-    background-image: url("../media/Img/cert.jpg");
+    background-image: url("../media/img/cert.jpg");
     width: 100%;
     background-position: center;
     overflow: hidden; }
@@ -825,7 +827,7 @@
     display: grid;
     grid-template-areas: "header" "video" "manifiesto" "productos" "servicios" "circular" "certi" "contacto" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 60px 300px 500px 300px 400px 400px 250px 760px 100px; }
+    grid-template-rows: 60px 300px 500px 300px 400px 400px 250px 460px 100px; }
   .gridAreaNos {
     display: grid;
     grid-template-areas: "header" "placa" "historia" "detalles" "complejo"                 "footer";
@@ -947,7 +949,8 @@
     text-align: center;
     margin: auto;
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    padding: 0px 20px; }
   .unica {
     width: 100%;
     height: 250px;
@@ -960,17 +963,12 @@
     height: 200px;
     display: flex; }
   .nos {
-    background-image: url("../media/Img/nos.jpg");
+    background-image: url("../media/img/nos.jpg");
     width: 100%;
     background-position: center;
     overflow: hidden; }
   .serv {
-    background-image: url("../media/Img/serv.jpg");
-    width: 100%;
-    background-position: center;
-    overflow: hidden; }
-  .cert {
-    background-image: url("../media/Img/cert.jpg");
+    background-image: url("../media/img/serv.jpg");
     width: 100%;
     background-position: center;
     overflow: hidden; }
@@ -1209,7 +1207,7 @@
     display: grid;
     grid-template-areas: "header" "video" "manifiesto" "productos" "servicios" "circular" "certi" "contacto" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 60px 200px 400px 400px 400px 300px 350px 430px 100px; }
+    grid-template-rows: 60px 200px 400px 400px 400px 300px 350px 350px 100px; }
   .gridAreaNos {
     display: grid;
     grid-template-areas: "header" "placa" "historia" "detalles" "complejo"                 "footer";
