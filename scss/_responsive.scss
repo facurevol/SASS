@@ -262,11 +262,16 @@
     }
 
     .divP {
-        width: 310px;
+        width: 610px;
         padding: 5px;
         margin: 5px 5px;
         align-content: center;
         transition: all 1s;    
+    }
+
+    .divP:hover {
+        background-color: $color-background-section;
+        transition: all 3s;
     }
 
     article {
@@ -279,9 +284,7 @@
         flex-flow: row wrap;
     }
 
-    article divP:hover {
-        background-color:rgb(9, 200, 248);
-    }
+   
 
 
     //tipografia
@@ -895,17 +898,17 @@
     }
 
     .divP {
-        width: 350px;
+        width: 610px;
         padding: 5px;
         margin: 5px 5px;
         align-content: center;
         transition: all 1s;    
     }
 
-    article divP:hover {
-        background-color:rgb(9, 200, 248);
+    .divP:hover {
+        background-color: $color-background-section;
+        transition: all 3s;
     }
-
 
     //tipografia
 

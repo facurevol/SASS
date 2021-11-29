@@ -261,9 +261,11 @@
         transition: all 1s;    
     }
 
-    article divP:hover {
-        background-color:rgb(9, 200, 248);
+    .divP:hover {
+        background-color: $color-background-section;
+        transition: all 3s;
     }
+     
 
 
     //tipografia
